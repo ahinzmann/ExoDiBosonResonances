@@ -39,6 +39,7 @@ patJetPartonAssociationCA8CHS.jets = jetSource
 
 from RecoJets.JetAssociationProducers.ak5JTA_cff import *
 ca8CHSJetTracksAssociatorAtVertex=ak5JetTracksAssociatorAtVertex.clone()
+ca8CHSJetTracksAssociatorAtVertex.coneSize=0.8
 ca8CHSJetTracksAssociatorAtVertex.jets=jetSource
 from RecoBTag.Configuration.RecoBTag_cff import * # btagging sequence
 # basic b-tagging
@@ -194,6 +195,7 @@ patJetPartonAssociationCA8CHSpruned.jets = jetSource
 
 from RecoJets.JetAssociationProducers.ak5JTA_cff import *
 ca8CHSprunedJetTracksAssociatorAtVertex=ak5JetTracksAssociatorAtVertex.clone()
+ca8CHSprunedJetTracksAssociatorAtVertex.coneSize=0.8
 ca8CHSprunedJetTracksAssociatorAtVertex.jets=jetSource
 from RecoBTag.Configuration.RecoBTag_cff import * # btagging sequence
 # basic b-tagging
